@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>応用3</title>
+</head>
+<body>
+		<form method="post" action="exetute">
+				<h1 th:text="${value1}"></h1>
+				<h3 th:text="${value2}"></h3>
+				<h3 th:text="${value3}"></h3>
+				<h3 th:text="${value4}"></h3>
+				<h1 th:text="${value5}"></h1>
+				<div>
+						Aは<span th:text="${num1}"></span><br> Bは<span th:text="${num2}"></span><br> A + B = <span th:text="${totalValue}"></span><br> A -
+						B = <span th:text="${subtractedValue}"></span>
+				</div>
+
+				<input type="text" name="text1" placeholder="1つ目" maxlength="10"><br>
+				<input type="text" name="text2" placeholder="2つ目"
+						maxlength="10">
+				<button type="submit">実行</button>
+		</form>
+</body>
+</html>

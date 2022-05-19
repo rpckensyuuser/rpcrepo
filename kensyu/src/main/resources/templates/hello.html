@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>入門3</title>
+</head>
+<body>
+		<form method="post" action="exetute">
+				<h1 th:text="${value}"></h1>
+				<div>
+						計算結果は<span style="font-weight: bold;" th:text="${totalValue}"></span>です。
+				</div>
+
+				<input type="text" name="text" placeholder="何か入力してください。" maxlength="10">
+				<button type="submit">実行</button>
+		</form>
+</body>
+</html>
