@@ -1,0 +1,29 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" th:src="@{/js/jquery-3.5.1.js}"></script>
+<script type="text/javascript" th:src="@{/js/js_demo.js}"></script>
+
+<title>JSデモ</title>
+</head>
+<body>
+		<div>JavaScriptで表示しています。</div>
+		<div>jQueryで表示しています。</div>
+
+		<input type="button" value="実行1" onclick="ButtonClick1();" />
+		<input type="text" id="name1" value="" />
+		<br>
+		<input type="button" value="実行2" onclick="ButtonClick2();" />
+		<input type="text" id="name2" value="">
+
+		<div>
+				JavaScriptで初期設定 <label><input type="checkbox" id="check1">りんご</label> <label><input type="checkbox" id="check2">みかん</label> <label><input
+						type="checkbox" id="check3">もも</label>
+		</div>
+		<div>
+				jQueryで初期設定 <label><input type="checkbox" id="check4">野球</label> <label><input type="checkbox" id="check5">サッカー</label> <label><input
+						type="checkbox" id="check6">バスケ</label>
+		</div>
+</body>
+</html>
